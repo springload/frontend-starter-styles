@@ -1,0 +1,11 @@
+{
+  "name": "frontend-starter-styles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:springload/frontend-starter-styles.git",
+  "author": "Springload",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
