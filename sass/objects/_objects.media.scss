@@ -1,0 +1,50 @@
+// ============================================================================
+// Media blocks
+// Float an image to the left, with a clearfixed block of content to the right.
+// ============================================================================
+
+
+$spacing-media: 1em;
+
+.media,
+.media--rev,
+.media--middle-align {
+    @include clearfix;
+}
+
+.media__image {
+    float: left;
+    margin-right: $spacing-media;
+}
+
+// Swap the image to the right
+.media--rev > .media__image {
+    float: right;
+    margin-right: 0;
+    margin-left: $spacing-media;
+}
+
+.media__body {
+    @include clearfix;
+}
+
+.media--rev > .media__body {
+    @include clearfix;
+}
+
+
+//  Modifiers
+// -----------------------------------------------------------------------------
+
+.media--middle-align {
+    display: table;
+
+    > .media__body {
+        display: table-cell;
+        vertical-align: middle;
+
+        > * {
+            margin: 0;
+        }
+    }
+}

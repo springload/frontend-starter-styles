@@ -1,0 +1,21 @@
+// ============================================================================
+// Icons
+// ============================================================================
+
+.i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+svg > use {
+    fill: currentColor;
+}
+
+.i--black {
+    color: $color-black;
+}
+
+.i--white {
+    color: $color-white;
+}

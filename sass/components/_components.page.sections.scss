@@ -1,0 +1,17 @@
+// ============================================================================
+// Section spacing
+// ============================================================================
+
+
+.section {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
+}
+
+.section--no-top {
+    padding-top: 0;
+}
+
+.section--no-bottom {
+    padding-bottom: 0;
+}

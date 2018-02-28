@@ -1,0 +1,40 @@
+// ============================================================================
+// Site colors
+// ============================================================================
+
+
+//  Brand
+// -----------------------------------------------------------------------------
+$color-brand-primary:               	#0f984f;
+$color-brand-primary-highlight:     	lighten($color-brand-primary, 5%);
+$color-brand-primary-shadow:        	darken($color-brand-primary,  5%);
+
+$color-brand-secondary:             	#c1813d;
+$color-brand-secondary-highlight:   	lighten($color-brand-secondary, 5%);
+$color-brand-secondary-shadow:      	darken($color-brand-secondary,  5%);
+
+
+// Common
+// -----------------------------------------------------------------------------
+$color-black:                       	#000;
+$color-white:                       	#fff;
+$color-grey-dark: 						#333;
+$color-grey-light:                      #666;
+
+// Page
+// -----------------------------------------------------------------------------
+$color-page-text:                   	$color-grey-dark;
+$color-page-links:                  	inherit;
+$color-page-background:                 #fff;
+
+
+// Accesibility
+// -----------------------------------------------------------------------------
+$color-focus:                      		#6cc6ee;
+$color-select:                     		#e5e5e5;
+
+
+// Opacity
+// -----------------------------------------------------------------------------
+$color-white-opacity-01:                rgba(255, 255, 255, .1);
+$color-black-opacity-01:                rgba(0, 0, 0, .1);

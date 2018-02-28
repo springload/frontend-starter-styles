@@ -1,0 +1,26 @@
+// ============================================================================
+// Page gutters
+// ============================================================================
+
+
+.gutters {
+    padding-right: $gutter-spacing;
+    padding-left: $gutter-spacing;
+}
+
+.gutters\@small {
+
+    @include small {
+        padding-right: $gutter-spacing;
+        padding-left: $gutter-spacing;
+    }
+}
+
+//turns the gutters off while on the breakpoint small
+.gutters--off\@small {
+
+    @include small {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

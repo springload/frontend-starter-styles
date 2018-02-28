@@ -1,0 +1,15 @@
+.u-hide {
+    display: none;
+}
+
+.u-hide\@small {
+    @include small {
+        display: none;
+    }
+}
+
+.u-hide\@medium {
+    @include medium {
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// Text
+// -----------------------------------------------------------------------------
+
+
+.u-text-bold {
+    font-weight: $font-weight-bold;
+}
+
+.u-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.u-text-underline {
+    text-decoration: underline !important;
+}
+
+.u-text-muted {
+    opacity: .75 !important;
+}
+
+.u-font-size\- {
+    font-size: .9em;
+}
+
+.u-font-size-- {
+    font-size: .85em;
+}
+
+.u-font-size\+ {
+    font-size: 1.2em;
+}
+
+.u-font-size\+\+ {
+    font-size: 1.5em;
+}
+
+// * 1. Ensures text doesn't wrap and break your layout
+// * 2. Trigger overflow behavior
+// * 3. Truncate the text
+.u-text-truncate {
+    @include truncate;
+}
+
+.u-hyphen {
+    @include xsmall {
+        // These are technically the same, but use both
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        // This is the dangerous one in WebKit, as it breaks things wherever
+        word-break: break-all;
+        // Instead use this non-standard one:
+        word-break: break-word;
+        // Adds a hyphen where the word breaks, if supported (No Blink)
+        hyphens: auto;
+    }
+}

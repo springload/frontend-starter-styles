@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Focus state
+// -----------------------------------------------------------------------------
+
+
+::selection {
+    background: $color-select; // WebKit/Blink Browsers
+}
+
+::-moz-selection {
+    background: $color-select; // Gecko Browsers
+}
+
+// Only include this if you have a plan for turning it back on for keyboard actions
+// *:active,
+// *:focus {
+//     outline: none;
+// }
+
+// Make sure to turn back on if no js
+// Use something like this:
+// https://github.com/springload/accessible-focus-styles
+// .no-js {
+//     *:focus {
+//         outline: solid 3px $color-focus;
+//     }
+// }
