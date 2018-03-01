@@ -3,17 +3,17 @@
 // ============================================================================
 
 .grid--row-spacing {
-    margin-bottom: $grid-spacing;
+    margin-bottom: $base-spacing-unit;
 
     > * {
-        margin-bottom: $grid-spacing;
+        margin-bottom: $base-spacing-unit;
     }
 }
 
 .grid--col-spacing {
-    margin-left: -$grid-spacing;
+    margin-left: -$base-spacing-unit;
 
     > * {
-        padding-left: $grid-spacing;
+        padding-left: $base-spacing-unit;
     }
 }

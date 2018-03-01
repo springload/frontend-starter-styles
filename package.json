@@ -6,6 +6,17 @@
   "author": "Springload",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "autoprefixer": "^8.0.0",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^0.0.3",
+    "normalize.css": "^8.0.0",
+    "postcss-cli": "^5.0.0"
+  },
+  "scripts": {
+    "build:scss-compile": "node-sass-chokidar --include-path=node_modules/normalize.css --source-map true src/sass/ -o dist/css",
+    "build:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "sass:build": "yarn build:scss-compile && yarn build:autoprefixer",
+    "sass:watch": "chokidar 'src/sass/**/*.scss' --include-path=node_modules/normalize.css -c 'yarn sass:build'",
+    "dev": "yarn sass:build && yarn sass:watch"
   }
 }

@@ -4,15 +4,15 @@
 
 
 .gutters {
-    padding-right: $gutter-spacing;
-    padding-left: $gutter-spacing;
+    padding-right: $base-spacing-unit;
+    padding-left: $base-spacing-unit;
 }
 
 .gutters\@small {
 
     @include small {
-        padding-right: $gutter-spacing;
-        padding-left: $gutter-spacing;
+        padding-right: $base-spacing-unit;
+        padding-left: $base-spacing-unit;
     }
 }
 

@@ -56,7 +56,7 @@ $themes: (
         }
 
         .u-current-color\:hover {
-            @include hover {
+            &:hover {
                 color: $theme-color;
             }
         }
@@ -80,7 +80,7 @@ $themes: (
     }
 
     .u-color-#{$alias}\:hover {
-        @include hover {
+        &:hover {
             color: $theme-color;
         }
     }
