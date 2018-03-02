@@ -1,6 +1,7 @@
 // ============================================================================
 // Media blocks
-// Float an image to the left, with a clearfixed block of content to the right.
+// Float an image to the left/right, with a clearfixed block of content to the 
+// right/left.
 // ============================================================================
 
 
@@ -28,8 +29,9 @@ $spacing-media: 1em;
     @include clearfix;
 }
 
-.media--rev > .media__body {
-    @include clearfix;
+// Don't let text wrap underneath image
+.media__body--no-wrap {
+    overflow: hidden;
 }
 
 
@@ -42,9 +44,5 @@ $spacing-media: 1em;
     > .media__body {
         display: table-cell;
         vertical-align: middle;
-
-        > * {
-            margin: 0;
-        }
     }
 }

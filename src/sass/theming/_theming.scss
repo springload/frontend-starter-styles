@@ -3,33 +3,6 @@
 // The default theme goes first. Following themes will override the default.
 // ============================================================================
 
-/* 
-<div class="t-pink">
-    <div class="u-current-bg-color">
-        <p>pink</p>
-    </div>
-    <div>
-        <p class="u-current-color">pink</p>
-    </div>
-</div>
-<div class="t-green">
-    <div class="u-current-bg-color">
-        <p>green</p>
-    </div>
-    <div>
-        <p class="u-current-color">green</p>
-    </div>
-</div>
-<div class="t-blue">
-    <div class="u-current-bg-color">
-        <p>blue</p>
-    </div>
-    <div>
-        <p class="u-current-color">blue</p>
-    </div>
-</div>
-*/
-
 $themes: (
     'pink': (
         theme-color: #f5b1d8,

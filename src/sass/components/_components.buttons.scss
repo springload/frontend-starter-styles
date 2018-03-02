@@ -2,20 +2,18 @@
 // Buttons
 // -----------------------------------------------------------------------------
 
-
-/* 
 // 1. Allow us to style box model properties.
 // 2. Line different sized buttons up a little nicer.
 // 3. Make buttons inherit font styles (often necessary when styling `input`s as
 //    buttons).
 // 4. Reset/normalize some styles.
 // 5. Force all button-styled elements to appear clickable.
-// 7. Stop buttons wrapping and looking broken.
-// 8. If the button’s text is 1em, and the button is (2.5 * font-size) tall, then
+// 6. Stop buttons wrapping and looking broken.
+// 7. If the button’s text is 1em, and the button is (2.5 * font-size) tall, then
 //    there is 1em of space above and below that text. We therefore apply 1em
 //    of space to the left and right, as padding, to keep consistent spacing.
-// 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
-*/
+// 8. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+
 
 $color-btn:                             $color-page-text;
 $color-btn-border:                      $color-page-text;
@@ -36,15 +34,15 @@ $padding-btn: $base-spacing-unit;
     color: $color-btn;
     transition: $base-transition;
 
-    white-space: nowrap;                // [7]
+    white-space: nowrap;                // [6]
     overflow: hidden;
     text-overflow: ellipsis;
 
     padding-top: 0;                     // [4]
-    padding-right: $padding-btn;        // [8]
+    padding-right: $padding-btn;        // [7]
     padding-bottom: 0;                  // [4]
-    padding-left: $padding-btn;         // [8]
-    line-height: 2.5;                   // [8]
+    padding-left: $padding-btn;         // [7]
+    line-height: 2.5;                   // [7]
 
     border-color: $color-btn-border;
     border-style: solid;
@@ -63,7 +61,7 @@ $padding-btn: $base-spacing-unit;
 
     &,
     &:hover {
-        text-decoration: none;         // [9]
+        text-decoration: none;         // [8]
     }
 
     &:hover {
