@@ -2,24 +2,25 @@
 // COMPONENTS
 // -----------------------------------------------------------------------------
 // Buttons..............Button styles.
-// Button-groups........Button styles.
+// Button-groups........Stle groups of buttons.
 // Icons................SVG icon styles.
 // Icon Text............SVG icon and text combos.
-// Images...............Image styles.
 // Links................Various link styles.
-// Nav primary..........The site’s main nav.
+// Links.complex....... For block links that contain more complex content.
+// Page.wrappers........Page wrappers to set site width.
 // Page.section.........Page vertical spacing.
-// Page.wrappers........Page widths.
 // Page.gutters.........Page horizontal spacing.
-// Page.header..........Page header styles.
+// Form.................Base form styles.
 // Form.radio-picker....Radio picker form.
+// Tables...............From basic to responsive to striped.
 // Rich text............Set up a new styling context for long-format text.
 
 @import 'components/components.buttons';
 @import 'components/components.button-groups';
-@import 'components/components.icon-text';
 @import 'components/components.icons';
+@import 'components/components.icon-text';
 @import 'components/components.links';
+@import 'components/components.links.complex';
 @import 'components/components.page.wrappers';
 @import 'components/components.page.gutters';
 @import 'components/components.page.sections';

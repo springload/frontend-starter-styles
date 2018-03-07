@@ -23,7 +23,6 @@ $themes: (
     $text-color: map-get($colors, text-color);
 
     .t-#{$alias} {
-
         .u-current-color {
             color: $theme-color;
         }

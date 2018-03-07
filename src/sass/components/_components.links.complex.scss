@@ -1,0 +1,23 @@
+// ============================================================================
+// Links
+// ============================================================================
+
+
+.link-complex {
+    display: block;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link-complex__target {
+    color: $color-page-links;
+}
+
+// Hover state for "fake links" inside complex block
+.link-complex:hover .link-complex__target {
+    text-decoration: underline;
+    color: $color-page-links;
+}

@@ -17,7 +17,7 @@
                 "first-nested"
             ],
             "ignore": ["after-comment"],
-            "ignoreAtRules": ["if", "elseif", "else", "include", "import", "return"]
+            "ignoreAtRules": ["if", "elseif", "else", "each", "include", "import", "return"]
         } ],
         "at-rule-name-case": "lower",
         "at-rule-name-newline-after": "always-multi-line",
