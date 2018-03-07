@@ -6,7 +6,6 @@
 // Note: requires data-header attribute to be set on cells in tbody
 // ============================================================================
 
-
 $table-title-spacing: 20px;
 
 @mixin full-width-styles\@small {
@@ -27,51 +26,51 @@ $table-title-spacing: 20px;
     }
 }
 
-    // Hide table header, we apply the content to pseudo elements of the corresponding cell instead
-    .table--responsive .table__head {
-        @include small {
-            display: 0;
-        }
+// Hide table header, we apply the content to pseudo elements of the corresponding cell instead
+.table--responsive .table__head {
+    @include small {
+        display: 0;
     }
+}
 
-    .table--responsive .table__body,
-    .table--responsive .table__row {
-        @include small {
-            // removes awkward ghost table spacing
-            display: block;
-        }
+.table--responsive .table__body,
+.table--responsive .table__row {
+    @include small {
+        // removes awkward ghost table spacing
+        display: block;
     }
+}
 
-        .table--responsive .table__cell {
-            @include full-width-styles\@small;
-            @include small {
-                position: relative;
-                overflow: hidden;
-                padding-left: 50%;
-                background: $color-table-stripe;
-                border-top: solid 1px $color-table-border;
-            }
-        }
+.table--responsive .table__cell {
+    @include full-width-styles\@small;
+    @include small {
+        position: relative;
+        overflow: hidden;
+        padding-left: 50%;
+        background: $color-table-stripe;
+        border-top: solid 1px $color-table-border;
+    }
+}
 
-        // Make it look like the table headers have moved to the left column
-        .table--responsive .table__cell::before {
-            @include small {
-                content: attr(data-header);
-                float: left;
-                width: 95%;
-                margin-left: -100%;
-                color: $color-grey-dark;
-            }
-        }
+// Make it look like the table headers have moved to the left column
+.table--responsive .table__cell::before {
+    @include small {
+        content: attr(data-header);
+        float: left;
+        width: 95%;
+        margin-left: -100%;
+        color: $color-grey-dark;
+    }
+}
 
-        // Table cell that acts more like a table header on small screens
-        .table--responsive .table__cell--title\@small {
-            @include small {
-                padding: 0;
-                margin-top: $table-title-spacing;
-                margin-bottom: $table-title-spacing / 3;
-                background: transparent;
-                font-weight: bold;
-                border-top: 0;
-            }
-        }
+// Table cell that acts more like a table header on small screens
+.table--responsive .table__cell--title\@small {
+    @include small {
+        padding: 0;
+        margin-top: $table-title-spacing;
+        margin-bottom: $table-title-spacing / 3;
+        background: transparent;
+        font-weight: bold;
+        border-top: 0;
+    }
+}

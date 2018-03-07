@@ -40,8 +40,8 @@ $spacing-xxl: ($spacing + 2.5);   // 64px
 $base-transition:       all .1s ease-in;
 
 $ease-primary:          cubic-bezier(.51, .11, .59, .92);
-$ease-out-primary:      cubic-bezier(.2 , .42, .59, .92);
-$ease-in-primary:       cubic-bezier(.55 , .12, 1, 1);
+$ease-out-primary:      cubic-bezier(.2, .42, .59, .92);
+$ease-in-primary:       cubic-bezier(.55, .12, 1, 1);
 
 $ease:                  cubic-bezier(.43, .11, .41, 1);
 $easing-circ:           cubic-bezier(.075, .82, .165, 0);

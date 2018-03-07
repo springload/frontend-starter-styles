@@ -33,22 +33,18 @@ $padding-btn: $base-spacing-unit;
     background-color: $color-btn-background;
     color: $color-btn;
     transition: $base-transition;
-
     white-space: nowrap;                // [6]
     overflow: hidden;
     text-overflow: ellipsis;
-
     padding-top: 0;                     // [4]
     padding-right: $padding-btn;        // [7]
     padding-bottom: 0;                  // [4]
     padding-left: $padding-btn;         // [7]
     line-height: 2.5;                   // [7]
-
     border-color: $color-btn-border;
     border-style: solid;
     border-width: 3px;
     border-radius: 0;
-
     font-size: inherit;
     font-weight: $font-weight-bold;
 

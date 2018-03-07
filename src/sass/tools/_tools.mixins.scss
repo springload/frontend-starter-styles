@@ -28,61 +28,48 @@
 
 // add arrow to block element
 @mixin arrow($orientation: 'up', $color: #000, $size: 1em) {
-
     position: relative;
 
     &::after {
         position: absolute;
         content: '';
         border-color: $color;
-
         width: 0;
         height: 0;
         z-index: 7;
 
         @if ($orientation == 'up') {
-
             top: auto;
             bottom: 100%;
             left: 1.5 * $size;
-
             border-top: 0;
             border-left: $size solid transparent;
             border-right: $size solid transparent;
-
             border-bottom-width: $size;
             border-bottom-style: solid;
 
         } @else if ($orientation == 'down') {
-
             border-bottom: 0;
             border-left: $size solid transparent;
             border-right: $size solid transparent;
-
             border-top-width: $size;
             border-top-style: solid;
 
         } @else if ($orientation == 'right') {
-
             left: 100%;
             top: 1.5 * $size;
-
             border-right: 0;
             border-top: $size solid transparent;
             border-bottom: $size solid transparent;
-
             border-left-width: $size;
             border-left-style: solid;
 
         } @else if ($orientation == 'left') {
-
             right: 100%;
             top: 1.5 * $size;
-
             border-left: 0;
             border-top: $size solid transparent;
             border-bottom: $size solid transparent;
-
             border-right-width: $size;
             border-right-style: solid;
 
@@ -99,13 +86,13 @@
 
     &::before {
         display: block;
-        content: "";
+        content: '';
         width: 100%;
         // See functions
         padding-top: ratio($width, $height);
     }
 
-    > .ratio__content {
+    > &__content {
         position: absolute;
         top: 0;
         left: 0;
@@ -113,7 +100,7 @@
         bottom: 0;
     }
 
-    .ratio__image {
+    &__image {
         display: block;
         position: absolute;
         min-height: 101%;

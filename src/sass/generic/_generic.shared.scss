@@ -2,7 +2,7 @@
 // Shared
 // ============================================================================
 
-// sass-lint:disable single-line-per-selector
+/* stylelint-disable */
 h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 blockquote, p, address,
@@ -22,3 +22,4 @@ ul, ol,
 dd {
     margin-left: $base-spacing-unit;
 }
+/* stylelint-enable */

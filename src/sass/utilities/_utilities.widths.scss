@@ -5,11 +5,10 @@
 // A mixin to spit out our width classes. Pass in the columns we want, the widths
 // to have, and an optional suffix for responsive widths. E.g. to create thirds
 // and quarters for a small breakpoint:
-//
 // @include widths(3 4, \@small);
 
 @mixin widths($widths-columns, $widths-breakpoint: null) {
-
+    /* stylelint-disable rule-empty-line-before */
     .width-full#{$widths-breakpoint} {
         width: 100% !important;
     }

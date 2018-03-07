@@ -11,13 +11,17 @@
     "cssnano": "^3.10.0",
     "node-sass-chokidar": "^0.0.3",
     "normalize.css": "^8.0.0",
-    "postcss-cli": "^5.0.0"
+    "postcss-cli": "^5.0.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-scss": "^2.5.0"
   },
   "scripts": {
     "compile:dev": "node-sass-chokidar --include-path=node_modules/normalize.css src/sass/ -o dist/css",
     "compile:dist": "node-sass-chokidar --include-path=node_modules/normalize.css src/sass/ -o dist/css",
     "build:dev": "yarn compile:dev && postcss dist/css/*.css --use autoprefixer -d dist/css",
     "build:dist": "yarn compile:dist && postcss dist/css/*.css --no-map --use autoprefixer cssnano -d dist/css",
+    "lint": "stylelint 'src/sass/**/*.scss' --syntax scss",
     "start": "chokidar 'src/sass/**/*.scss' --include-path=node_modules/normalize.css -c 'yarn build:dev'"
   }
 }

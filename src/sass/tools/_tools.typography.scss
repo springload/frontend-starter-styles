@@ -2,7 +2,7 @@
 
     @if ($family == 'sans-serif') {
         font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    } @elseif ($family == 'serif') {
+    } @else if ($family == 'serif') {
         font-family: 'Times New Roman', serif;
     } @else {
         @warn '#{$family} is not a valid font-family.';
@@ -10,13 +10,11 @@
 
 }
 
-// Simple truncation mixin to cut off text using an ellipsis after a certain
-// width.
-
+// Simple truncation mixin to cut off text using an ellipsis after a certain width.
 @mixin truncate($width: 100%) {
-  max-width: $width;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    max-width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 

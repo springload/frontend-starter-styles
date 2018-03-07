@@ -22,7 +22,6 @@ $button-margin: .5em;
 }
 
 .btn-group > * {
-
     display: inline-block;
     margin-right: $button-margin;
     margin-bottom: 0;
@@ -66,14 +65,13 @@ $button-margin: .5em;
     white-space: nowrap;
 }
 
-    .btn-group--justified\@small {
-        @include small {
-            @include justify-table;
-        }
+.btn-group--justified\@small {
+    @include small {
+        @include justify-table;
     }
+}
 
 .btn-group--reverse\@small {
-
     @include small {
         display: flex;
         flex-direction: column-reverse;
