@@ -1,0 +1,83 @@
+// ============================================================================
+// Ratio
+// ============================================================================
+
+
+// Create ratio-bound content blocks, to keep media (e.g. images, videos) in
+// their correct aspect ratios.
+// Default is a 1:1 ratio (i.e. a perfect square).
+
+.ratio {
+    position: relative;
+    display: block;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+}
+
+.ratio__content,
+.ratio > iframe,
+.ratio > embed,
+.ratio > object {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ratio__image {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+// Ratio variants.
+// ========================================================================== //
+
+// A list of aspect ratios that get generated as modifier classes.
+// You should predefine it with only the ratios and names your project needs.
+
+$ratios: (
+    '2\\/1'   : (2:1),
+    '4\\/3'   : (4:3),
+    '16\\/9'  : (16:9)
+) !default;
+
+// Generate a series of ratio classes to be used like so:
+// <div class="ratio ratio--2/1">
+
+@each $ratio-name, $ratio-value in $ratios {
+
+    @each $antecedent, $consequent in $ratio-value {
+
+        @if (type-of($antecedent) != number) {
+            @error '`#{$antecedent}` needs to be a number.';
+        }
+
+        @if (type-of($consequent) != number) {
+            @error '`#{$consequent}` needs to be a number.';
+        }
+
+        .ratio--#{$ratio-name}::before {
+            padding-top: ratio($consequent/$antecedent);
+        }
+
+    }
+
+}
+

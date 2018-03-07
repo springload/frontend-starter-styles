@@ -86,10 +86,9 @@
 
     &::before {
         display: block;
-        content: '';
         width: 100%;
-        // See functions
         padding-top: ratio($width, $height);
+        content: '';
     }
 
     > &__content {
@@ -103,6 +102,8 @@
     &__image {
         display: block;
         position: absolute;
+        width: auto;
+        height: auto;
         min-height: 101%;
         min-width: 100%;
         left: 0;
