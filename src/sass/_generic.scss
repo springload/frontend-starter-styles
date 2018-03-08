@@ -1,10 +1,12 @@
 // GENERIC
-
+// Normalize............Imported globally from node modules using 
+//                      node-sass-chokidar include path at compilation.
 // Box-sizing...........Better default `box-sizing`.
 // Keyframes............Animation keyframes.
 // Reset................A pared back reset to remove margins.
 // Shared...............Sensibly and tersely share global commonalities.
 
+@import 'normalize';
 @import 'generic/generic.box-sizing';
 @import 'generic/generic.keyframes';
 @import 'generic/generic.reset';

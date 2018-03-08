@@ -8,7 +8,6 @@
 // @include widths(3 4, \@small);
 
 @mixin widths($widths-columns, $widths-breakpoint: null) {
-    /* stylelint-disable rule-empty-line-before */
     .width-full#{$widths-breakpoint} {
         width: 100% !important;
     }

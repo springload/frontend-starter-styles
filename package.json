@@ -21,6 +21,6 @@
     "compile": "yarn lint && node-sass-chokidar --include-path=node_modules/normalize.css src/sass/ -o dist/css",
     "build": "yarn compile && postcss dist/css/*.css --use autoprefixer -d dist/css",
     "dist": "yarn compile && postcss dist/css/*.css --no-map --use autoprefixer cssnano -d dist/css",
-    "start": "chokidar 'src/sass/**/*.scss' --include-path=node_modules/normalize.css -c 'yarn build'"
+    "start": "node-sass-chokidar 'src/sass' --watch --include-path=node_modules/normalize.css -o dist/css -c 'yarn build'"
   }
 }
