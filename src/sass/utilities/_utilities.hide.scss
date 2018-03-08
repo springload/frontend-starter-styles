@@ -1,10 +1,21 @@
-// Prevent all user interaction with the element
-.u-disabled {
-    pointer-events: none !important;
-    cursor: default !important;
+.u-hide {
+    display: none;
 }
 
-// An accessible label that takes up no visual space
+.u-hide\@small {
+    @include small {
+        display: none;
+    }
+}
+
+.u-hide\@medium {
+    @include medium {
+        display: none;
+    }
+}
+
+// Takes up no visual space and hide only visually, still available for screen readers 
+.u-hide-visually,
 .u-accessible {
     position: absolute;
     width: 1px;
@@ -16,3 +27,4 @@
     border: 0;
     clip-path: inset(1px); // New (experimental) CSS property
 }
+
