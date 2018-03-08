@@ -7,9 +7,7 @@
 
 $spacing-media: 1em;
 
-.media,
-.media--rev,
-.media--middle-align {
+.media {
     @include clearfix;
 }
 
