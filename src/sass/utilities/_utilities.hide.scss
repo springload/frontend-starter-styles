@@ -25,6 +25,7 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0); // Deprecated but still needed to support Firefox & IE
     border: 0;
-    clip-path: inset(1px); // New (experimental) CSS property
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
