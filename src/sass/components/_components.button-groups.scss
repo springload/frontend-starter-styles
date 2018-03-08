@@ -31,7 +31,6 @@ $button-margin: .5em;
     &:last-child {
         margin-right: 0;
     }
-
 }
 
 //  Modifiers
@@ -61,7 +60,6 @@ $button-margin: .5em;
 
 .btn-group--justified {
     @include justify-table;
-
     white-space: nowrap;
 }
 

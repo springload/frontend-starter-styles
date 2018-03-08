@@ -9,7 +9,6 @@
 }
 
 .gutters\@small {
-
     @include small {
         padding-right: $base-spacing-unit;
         padding-left: $base-spacing-unit;
@@ -18,7 +17,6 @@
 
 //turns the gutters off while on the breakpoint small
 .gutters--off\@small {
-
     @include small {
         padding-right: 0;
         padding-left: 0;

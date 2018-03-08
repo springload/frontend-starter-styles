@@ -24,11 +24,10 @@ $font-weight-bold:      700;
 $base-spacing-unit: 1.5rem; // 24px
 $spacing: $base-spacing-unit;
 
-$spacing-s: ($spacing - .5);      // 16px
-$spacing-xs: ($spacing / 2);      // 12px
 $spacing-xxs: ($spacing / 4);    // 6px
+$spacing-xs: ($spacing / 2);      // 12px
+$spacing-s: ($spacing - .5);      // 16px
 
-// Larger Spacing
 $spacing-l: ($spacing + .5);      // 32px
 $spacing-xl: ($spacing + 1);      // 40px
 $spacing-xxl: ($spacing + 2.5);   // 64px
