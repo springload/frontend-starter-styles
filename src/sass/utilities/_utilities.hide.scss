@@ -14,7 +14,7 @@
     }
 }
 
-// Takes up no visual space and hide only visually, still available for screen readers 
+// Takes up no visual space and hide only visually, still available for screen readers
 .u-hide-visually,
 .u-accessible {
     position: absolute;
@@ -28,4 +28,3 @@
     clip-path: inset(50%);
     white-space: nowrap;
 }
-

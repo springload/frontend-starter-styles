@@ -4,18 +4,9 @@
 // ============================================================================
 
 $themes: (
-    'pink': (
-        theme-color: #f5b1d8,
-        text-color: #333
-    ),
-    'green': (
-        theme-color: #a5cc8e,
-        text-color: #333
-    ),
-    'blue': (
-        theme-color: #509ac7,
-        text-color: #333
-    )
+    'pink': (theme-color: #f5b1d8, text-color: #333),
+    'green': (theme-color: #a5cc8e, text-color: #333),
+    'blue': (theme-color: #509ac7, text-color: #333)
 );
 
 @each $alias, $colors in $themes {
@@ -44,7 +35,6 @@ $themes: (
         .u-current-text-color {
             color: $text-color;
         }
-
     }
 
     .u-color-#{$alias} {

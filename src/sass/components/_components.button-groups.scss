@@ -2,8 +2,7 @@
 // Button groups
 // -----------------------------------------------------------------------------
 
-
-$button-margin: .5em;
+$button-margin: 0.5em;
 
 @mixin justify-table {
     display: table;
@@ -35,7 +34,6 @@ $button-margin: .5em;
 
 //  Modifiers
 // -----------------------------------------------------------------------------
-
 
 .btn-group--block > * {
     width: 100%;

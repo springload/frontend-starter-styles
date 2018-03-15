@@ -8,7 +8,7 @@
 
 $table-title-spacing: 20px;
 
-@mixin full-width-styles\@small {
+@mixin full-width-styles {
     @include small {
         display: block;
         width: 100%;
@@ -42,7 +42,7 @@ $table-title-spacing: 20px;
 }
 
 .table--responsive .table__cell {
-    @include full-width-styles\@small;
+    @include full-width-styles;
     @include small {
         position: relative;
         overflow: hidden;
