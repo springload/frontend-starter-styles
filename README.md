@@ -46,6 +46,3 @@ yarn lint
 ## Code linting
 
 The project's code is linted with [Stylelint](https://github.com/stylelint/stylelint).
-
-
-https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md
