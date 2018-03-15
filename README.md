@@ -26,6 +26,8 @@ yarn install
 
 > Everything mentioned in the installation process should already be done.
 
+This is the architectural base for css that we work with at Springload. Build on top of this as you wish, but here are the [css guidlines we follow](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md).
+
 Should you choose to run any of this project's build tasks, it uses [node-sass](https://github.com/sass/node-sass) by way of [node-sass-chokidar](https://github.com/michaelwayman/node-sass-chokidar), and [PostCSS](https://github.com/postcss/postcss).
 
 ```sh
@@ -41,6 +43,9 @@ yarn dist
 yarn lint
 ```
 
-### Code linting
+## Code linting
 
 The project's code is linted with [Stylelint](https://github.com/stylelint/stylelint).
+
+
+https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md
