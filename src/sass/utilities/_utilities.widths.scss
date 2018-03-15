@@ -27,11 +27,11 @@
     }
 }
 
-// A series of width helper classes that you can use to size things like grid
+
+// Generate width helper classes that you can use to size things like grid
 // systems. Classes take a fraction-like format (e.g. `.width-2/3`).
 // Use these in your markup:
-//
-// <div class="width-1/4">
+// <div class="width-full@small width-1/2 width-1/4@large">
 
 @include widths(2 3 4 10);
 
