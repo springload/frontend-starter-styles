@@ -1,7 +1,6 @@
-// -----------------------------------------------------------------------------
+// =============================================================================
 // Text
-// -----------------------------------------------------------------------------
-
+// =============================================================================
 
 .u-text-bold {
     font-weight: $font-weight-bold;
@@ -16,15 +15,15 @@
 }
 
 .u-text-muted {
-    opacity: .75 !important;
+    opacity: 0.75 !important;
 }
 
 .u-font-size\- {
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .u-font-size-- {
-    font-size: .85em;
+    font-size: 0.85em;
 }
 
 .u-font-size\+ {
@@ -35,11 +34,11 @@
     font-size: 1.5em;
 }
 
-// * 1. Ensures text doesn't wrap and break your layout
-// * 2. Trigger overflow behavior
-// * 3. Truncate the text
 .u-text-truncate {
-    @include truncate;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .u-hyphen {

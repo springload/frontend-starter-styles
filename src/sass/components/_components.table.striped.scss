@@ -1,12 +1,12 @@
-// ============================================================================
+// =============================================================================
 // Striped tables
-// This component adds stripes to each odd row in the table body section.
-// We don't want this as a base style on all tables otherwise we have to remove 
-// them from various breakpoints in various situations. 
-// Better to lock it down to a class of its own since the declaration to 
-// style the stripes is quite specific.
-// ============================================================================
+// =============================================================================
 
+// This component adds stripes to each odd row in the table body section.
+// We don't want this as a base style on all tables otherwise we have to remove
+// them from various breakpoints in various situations.
+// Better to lock it down to a class of its own since the declaration to
+// style the stripes is quite specific.
 
 .table--striped .table__body .table__row:nth-child(odd) {
     background-color: $color-table-stripe;

@@ -1,20 +1,20 @@
-// ============================================================================
+// =============================================================================
 // Tables
+// =============================================================================
+
 // Base styles to be shared across all table options
 // We have 5 table options/modifiers. Usually there will be at least two
 // options applied to a table since the table class alone is just basic styles.
 
-// - Eg. `class="table table--responsive table--striped"`
-// - `class="table table--stacked table--striped"`
+// Eg.  `class="table table--responsive table--striped"`
+//      `class="table table--stacked table--striped"`
 
 // This may feel verbose, but it is the most flexible and efficient way to
 // handle the use of many different table styles without having to override
 // each other or use many different cell classes throughout the markup.
 
-// ============================================================================
-
-$color-table-border: 					#f1f1f1;
-$color-table-stripe: 					#f4ffff;
+$color-table-border: #f1f1f1;
+$color-table-stripe: #f4ffff;
 
 .table {
     border: 1px solid $color-table-border;
@@ -33,12 +33,12 @@ $color-table-stripe: 					#f4ffff;
 // Table cells
 .table__cell,
 .table__header-cell {
-    padding: .75em;
+    padding: 0.75em;
     border-right: solid 1px $color-table-border;
     vertical-align: top;
 }
 
 // add body divider line
 .table__row--border\+\+ {
-    border-bottom: 5px solid  $color-table-border;
+    border-bottom: 5px solid $color-table-border;
 }

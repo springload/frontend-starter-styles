@@ -1,7 +1,6 @@
-// ------------------------------------
-//    Mixins
-// ------------------------------------
-
+// =============================================================================
+// Mixins
+// =============================================================================
 
 @mixin clearfix {
     &::after {
@@ -47,14 +46,12 @@
             border-right: $size solid transparent;
             border-bottom-width: $size;
             border-bottom-style: solid;
-
         } @else if ($orientation == 'down') {
             border-bottom: 0;
             border-left: $size solid transparent;
             border-right: $size solid transparent;
             border-top-width: $size;
             border-top-style: solid;
-
         } @else if ($orientation == 'right') {
             left: 100%;
             top: 1.5 * $size;
@@ -63,7 +60,6 @@
             border-bottom: $size solid transparent;
             border-left-width: $size;
             border-left-style: solid;
-
         } @else if ($orientation == 'left') {
             right: 100%;
             top: 1.5 * $size;
@@ -72,43 +68,6 @@
             border-bottom: $size solid transparent;
             border-right-width: $size;
             border-right-style: solid;
-
         }
-
-    }
-
-}
-
-// ratio
-@mixin aspect-ratio($width, $height) {
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        display: block;
-        width: 100%;
-        padding-top: ratio($width, $height);
-        content: '';
-    }
-
-    > &__content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    &__image {
-        display: block;
-        position: absolute;
-        width: auto;
-        height: auto;
-        min-height: 101%;
-        min-width: 100%;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        object-fit: cover;
     }
 }

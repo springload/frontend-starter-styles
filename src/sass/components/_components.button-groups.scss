@@ -1,24 +1,8 @@
-// -----------------------------------------------------------------------------
+// =============================================================================
 // Button groups
-// -----------------------------------------------------------------------------
+// =============================================================================
 
 $button-margin: 0.5em;
-
-@mixin justify-table {
-    display: table;
-    min-width: 100%;
-    margin-right: -$button-margin;
-    margin-left: -$button-margin;
-    border-collapse: separate;
-    border-spacing: $button-margin 0;
-    table-layout: fixed;
-
-    > * {
-        display: table-cell;
-        float: none;
-        width: 1%;
-    }
-}
 
 .btn-group > * {
     display: inline-block;
@@ -33,7 +17,7 @@ $button-margin: 0.5em;
 }
 
 //  Modifiers
-// -----------------------------------------------------------------------------
+// =============================================================================
 
 .btn-group--block > * {
     width: 100%;
@@ -56,17 +40,6 @@ $button-margin: 0.5em;
     }
 }
 
-.btn-group--justified {
-    @include justify-table;
-    white-space: nowrap;
-}
-
-.btn-group--justified\@small {
-    @include small {
-        @include justify-table;
-    }
-}
-
 .btn-group--reverse\@small {
     @include small {
         display: flex;
@@ -80,5 +53,32 @@ $button-margin: 0.5em;
         > *:last-child {
             margin-top: 0;
         }
+    }
+}
+
+@mixin justify-table {
+    display: table;
+    min-width: 100%;
+    margin-right: -$button-margin;
+    margin-left: -$button-margin;
+    border-collapse: separate;
+    border-spacing: $button-margin 0;
+    table-layout: fixed;
+
+    > * {
+        display: table-cell;
+        float: none;
+        width: 1%;
+    }
+}
+
+.btn-group--justified {
+    @include justify-table;
+    white-space: nowrap;
+}
+
+.btn-group--justified\@small {
+    @include small {
+        @include justify-table;
     }
 }

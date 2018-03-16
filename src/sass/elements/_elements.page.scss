@@ -3,7 +3,7 @@
 // ============================================================================
 
 html {
-    @include font-family(sans-serif);
+    font-family: $font-family-default-sans-serif;
     font-size: ($font-size-base / 16px) * 1em;
     line-height: $line-height-base / $font-size-base;
     background-color: $color-page-background;

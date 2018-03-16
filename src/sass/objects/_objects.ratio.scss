@@ -2,7 +2,6 @@
 // Ratio
 // ============================================================================
 
-
 // Create ratio-bound content blocks, to keep media (e.g. images, videos) in
 // their correct aspect ratios.
 // Default is a 1:1 ratio (i.e. a perfect square).
@@ -10,6 +9,7 @@
 .ratio {
     position: relative;
     display: block;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -17,7 +17,6 @@
         width: 100%;
         padding-top: 100%;
     }
-
 }
 
 .ratio__content,
@@ -44,18 +43,16 @@
     transform: translateY(-50%);
 }
 
-
-
-// Ratio variants.
-// ========================================================================== //
+// Ratio variants
+// =============================================================================
 
 // A list of aspect ratios that get generated as modifier classes.
 // You should predefine it with only the ratios and names your project needs.
 
 $ratios: (
-    '2\\/1'   : (2:1),
-    '4\\/3'   : (4:3),
-    '16\\/9'  : (16:9)
+    '2\\/1': (2: 1),
+    '4\\/3': (4: 3),
+    '16\\/9': (16: 9)
 ) !default;
 
 // Generate a series of ratio classes to be used like so:
@@ -72,8 +69,7 @@ $ratios: (
         }
 
         .ratio--#{$ratio-name}::before {
-            padding-top: ratio($consequent, $antecedent);
+            padding-top: ($consequent / $antecedent) * 100%;
         }
     }
 }
-

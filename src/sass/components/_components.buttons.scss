@@ -1,46 +1,32 @@
-// -----------------------------------------------------------------------------
+// =============================================================================
 // Buttons
-// -----------------------------------------------------------------------------
+// =============================================================================
 
-// 1. Allow us to style box model properties.
-// 2. Line different sized buttons up a little nicer.
-// 3. Make buttons inherit font styles (often necessary when styling `input`s as
-//    buttons).
-// 4. Reset/normalize some styles.
-// 5. Force all button-styled elements to appear clickable.
-// 6. Stop buttons wrapping and looking broken.
-// 7. If the button’s text is 1em, and the button is (2.5 * font-size) tall, then
-//    there is 1em of space above and below that text. We therefore apply 1em
-//    of space to the left and right, as padding, to keep consistent spacing.
-// 8. Don’t allow buttons to have underlines; it kinda ruins the illusion.
-
-
-$color-btn:                             $color-page-text;
-$color-btn-border:                      $color-page-text;
-$color-btn-background:                  #fff;
-$color-btn-hover:                       #fff;
-$color-btn-background-hover:            $color-page-text;
-
+$color-btn: $color-page-text;
+$color-btn-border: $color-page-text;
+$color-btn-background: #fff;
+$color-btn-hover: #fff;
+$color-btn-background-hover: $color-page-text;
 $padding-btn: $base-spacing-unit;
 
 .btn {
-    display: inline-block;              // [1]
-    vertical-align: middle;             // [2]
-    font: inherit;                      // [3]
-    text-align: center;                 // [4]
-    margin: 0;                          // [4]
-    cursor: pointer;                    // [5]
+    display: inline-block;
+    vertical-align: middle;
+    font: inherit;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
     background-color: $color-btn-background;
     color: $color-btn;
     transition: $base-transition;
-    white-space: nowrap;                // [6]
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-top: 0;                     // [4]
-    padding-right: $padding-btn;        // [7]
-    padding-bottom: 0;                  // [4]
-    padding-left: $padding-btn;         // [7]
-    line-height: 2.5;                   // [7]
+    padding-top: 0;
+    padding-right: $padding-btn;
+    padding-bottom: 0;
+    padding-left: $padding-btn;
+    line-height: 2.5;
     border-color: $color-btn-border;
     border-style: solid;
     border-width: 3px;
@@ -57,20 +43,17 @@ $padding-btn: $base-spacing-unit;
 
     &,
     &:hover {
-        text-decoration: none;         // [8]
+        text-decoration: none;
     }
 
     &:hover {
-        outline: none;
         color: $color-btn-hover;
         background-color: $color-btn-background-hover;
     }
-
 }
 
-
 //  Modifiers
-// -----------------------------------------------------------------------------
+// =============================================================================
 
 .btn--small {
     padding-right: $padding-btn / 1.5;
@@ -97,5 +80,5 @@ $padding-btn: $base-spacing-unit;
 .btn--disabled {
     pointer-events: none;
     cursor: default;
-    opacity: .5 !important;
+    opacity: 0.5 !important;
 }

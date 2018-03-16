@@ -1,7 +1,6 @@
-// ============================================================================
+// =============================================================================
 // Basic common form fields
-// ============================================================================
-
+// =============================================================================
 
 $form-field-height: 2.5rem;
 
@@ -11,7 +10,7 @@ $form-field-height: 2.5rem;
 
 .form__label {
     display: inline-block;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 @mixin base-input-styles {
@@ -41,16 +40,15 @@ $form-field-height: 2.5rem;
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    border-left: .3125rem solid transparent;
-    border-right: .3125rem solid transparent;
-    border-top: .3125rem solid currentColor;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0.3125rem solid currentColor;
     content: '';
 }
 
 .form__select {
     @include base-input-styles;
     padding-right: 2rem;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     border-radius: 0;
 }
-

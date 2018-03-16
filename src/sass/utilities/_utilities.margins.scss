@@ -1,10 +1,10 @@
-// -----------------------------------------------------------------------------
+// =============================================================================
 // Margins
-// CSS Margins collapse into each other, so only set margins along one axis 
-// direction (e.g. right and bottom, or left and top , but not left and right 
-// and top and bottom). We use right and bottom.
-// -----------------------------------------------------------------------------
+// =============================================================================
 
+// CSS Margins collapse into each other, so only set margins along one axis
+// direction (e.g. right and bottom, or left and top , but not left and right
+// and top and bottom). We use right and bottom.
 
 .u-mb-0 {
     margin-bottom: 0 !important;
@@ -19,5 +19,5 @@
 }
 
 .u-mb-- {
-    margin-bottom: round(.5 * $base-spacing-unit) !important;
+    margin-bottom: round(0.5 * $base-spacing-unit) !important;
 }
