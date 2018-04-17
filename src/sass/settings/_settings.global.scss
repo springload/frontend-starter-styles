@@ -23,13 +23,13 @@ $font-weight-bold: 700;
 $base-spacing-unit: 1.5rem; // 24px
 $spacing: $base-spacing-unit;
 
-$spacing-xxs: rem(8);
-$spacing-xs: rem(12);
-$spacing-s: rem(16);
+$spacing-xxs: 0.5rem; // 8px
+$spacing-xs: 0.75rem; // 12px
+$spacing-s: 1rem; // 16px
 
-$spacing-l: rem(32);
-$spacing-xl: rem(40);
-$spacing-xxl: rem(64);
+$spacing-l: 2rem; // 32px
+$spacing-xl: 2.5rem; // 40px
+$spacing-xxl: 4rem; // 64px
 
 // Animations/Transitions
 // =============================================================================
