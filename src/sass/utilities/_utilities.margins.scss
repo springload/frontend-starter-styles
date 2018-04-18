@@ -11,13 +11,13 @@
 }
 
 .u-mb {
-    margin-bottom: $base-spacing-unit !important;
+    margin-bottom: $spacing !important;
 }
 
 .u-mb\+\+ {
-    margin-bottom: round(2 * $base-spacing-unit) !important;
+    margin-bottom: $spacing-xl !important;
 }
 
 .u-mb-- {
-    margin-bottom: round(0.5 * $base-spacing-unit) !important;
+    margin-bottom: $spacing-xs !important;
 }
