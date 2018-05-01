@@ -9,7 +9,7 @@ $font-family-default-sans-serif: 'HelveticaNeue', 'Helvetica Neue', Helvetica, A
 $font-family-default-serif: 'Georgia', 'Times New Roman', Times, serif;
 
 $font-size-base: 16px;
-$line-height-base: 24px;
+$line-height-base: 1.5;
 $line-height-headline: 1.2;
 
 $font-weight-light: 300;
@@ -19,17 +19,20 @@ $font-weight-bold: 700;
 
 // Spacing
 // =============================================================================
+// Default spacing by designers is multiples of 8.
 
 $base-spacing-unit: 1.5rem; // 24px
 $spacing: $base-spacing-unit;
 
+$spacing-xxxs: 0.25rem; // 4px
 $spacing-xxs: 0.5rem; // 8px
 $spacing-xs: 0.75rem; // 12px
 $spacing-s: 1rem; // 16px
 
 $spacing-l: 2rem; // 32px
 $spacing-xl: 2.5rem; // 40px
-$spacing-xxl: 4rem; // 64px
+$spacing-xxl: 3rem; // 48px
+$spacing-xxxl: 4rem; // 64px
 
 // Animations/Transitions
 // =============================================================================
