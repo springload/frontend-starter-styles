@@ -29,6 +29,9 @@
 @import 'elements/elements.images';
 
 // Objects
+@import 'objects/objects.wrappers';
+@import 'objects/objects.gutters';
+@import 'objects/objects.sections';
 @import 'objects/objects.grid.inline';
 @import 'objects/objects.grid.float';
 @import 'objects/objects.grid.flex';
@@ -46,9 +49,6 @@
 @import 'components/components.icon-text';
 @import 'components/components.links';
 @import 'components/components.links.complex';
-@import 'components/components.page.wrappers';
-@import 'components/components.page.gutters';
-@import 'components/components.page.sections';
 @import 'components/components.form';
 @import 'components/components.form.radio-picker';
 @import 'components/components.table.base';
