@@ -75,4 +75,8 @@
     h3 {
         page-break-after: avoid;
     }
+
+    .u-no-print {
+        display: none !important;
+    }
 }

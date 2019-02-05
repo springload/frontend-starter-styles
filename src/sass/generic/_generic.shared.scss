@@ -20,7 +20,7 @@ table,
 fieldset,
 figure,
 pre {
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: $spacing;
 
     &:last-child {
         margin-bottom: 0;
@@ -30,5 +30,5 @@ pre {
 ul,
 ol,
 dd {
-    margin-left: $base-spacing-unit;
+    margin-left: $spacing;
 }

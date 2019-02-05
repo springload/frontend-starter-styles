@@ -3,6 +3,6 @@
 // =============================================================================
 
 a {
-    color: $color-page-links;
-    transition: $base-transition;
+    color: $color-blue;
+    transition: color 0.2s $ease-primary;
 }

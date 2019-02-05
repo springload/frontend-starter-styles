@@ -2,13 +2,6 @@
 // Buttons
 // =============================================================================
 
-$color-btn: $color-page-text;
-$color-btn-border: $color-page-text;
-$color-btn-background: #fff;
-$color-btn-hover: #fff;
-$color-btn-background-hover: $color-page-text;
-$padding-btn: $base-spacing-unit;
-
 .btn {
     display: inline-block;
     vertical-align: middle;
@@ -16,18 +9,19 @@ $padding-btn: $base-spacing-unit;
     text-align: center;
     margin: 0;
     cursor: pointer;
-    background-color: $color-btn-background;
-    color: $color-btn;
-    transition: $base-transition;
+    background-color: $color-blue;
+    color: $color-white;
+    text-decoration: none;
+    transition: color;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-top: 0;
-    padding-right: $padding-btn;
+    padding-right: $spacing;
     padding-bottom: 0;
-    padding-left: $padding-btn;
+    padding-left: $spacing;
     line-height: 2.5;
-    border-color: $color-btn-border;
+    border-color: $color-blue;
     border-style: solid;
     border-width: 3px;
     border-radius: 0;
@@ -47,8 +41,9 @@ $padding-btn: $base-spacing-unit;
     }
 
     &:hover {
-        color: $color-btn-hover;
-        background-color: $color-btn-background-hover;
+        color: $color-white;
+        background-color: $color-blue-shadow;
+        border-color: $color-blue-shadow;
     }
 }
 
@@ -56,14 +51,14 @@ $padding-btn: $base-spacing-unit;
 // =============================================================================
 
 .btn--small {
-    padding-right: $padding-btn / 1.5;
-    padding-left: $padding-btn / 1.5;
+    padding-right: $spacing / 1.5;
+    padding-left: $spacing / 1.5;
     line-height: 2;
 }
 
 .btn--wide {
-    padding-right: $padding-btn * 2;
-    padding-left: $padding-btn * 2;
+    padding-right: $spacing * 2;
+    padding-left: $spacing * 2;
 }
 
 .btn--block {

@@ -2,9 +2,25 @@
 
 > The building blocks of CSS at Springload
 
-## Installation
+## Using the styles
 
 > Clone the project on your computer, install [Node](https://nodejs.org) and [Yarn](https://yarnpkg.com/lang/en/docs/install/). This project also uses [nvm](https://github.com/creationix/nvm).
+
+```sh
+cd ~/Development/sites/
+git clone git@github.com:springload/frontend-starter-styles.git
+# Go to your project
+cd YOUR_PROJECT_NAME
+# Copy the sass folder's contents from the starter-styles to your project
+# eg. cp -a source destination
+cp -a ../PATH_TO_STARTER_STYLES/frontend-starter-styles/src/sass/. ./PATH_TO_YOUR_FOLDER_INSIDE_YOUR_PROJECT/sass
+```
+
+See the [css guidelines](https://github.com/springload/frontend-starter-kit/blob/master/docs/css.md) we follow here at springload. You can build on top of these styles in your project. 
+
+## Working on this project
+
+#### Installation
 
 From the command-line:
 
@@ -22,7 +38,7 @@ nvm install
 yarn install
 ```
 
-## Working on the project
+#### Start working 
 
 > Everything mentioned in the installation process should already be done.
 
@@ -46,3 +62,11 @@ yarn lint
 ## Code linting
 
 The project's code is linted with [Stylelint](https://github.com/stylelint/stylelint).
+
+
+## Improvements
+
+Add any improvements you think could be made here:
+- [ ] Add an example / kitchen sink page with all the components.
+- [ ] CSS grid as another grid object
+- [ ] ...

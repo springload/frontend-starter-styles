@@ -4,8 +4,8 @@
 
 html {
     font-family: $font-family-default-sans-serif;
-    font-size: ($font-size-base / 16px) * 1em;
-    line-height: $line-height-base / $font-size-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     background-color: $color-page-background;
     color: $color-page-text;
     -webkit-tap-highlight-color: transparent;

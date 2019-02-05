@@ -2,12 +2,14 @@
 // Inline list
 // =============================================================================
 
+// <ul>
 .list-inline {
     margin-left: 0;
     padding: 0;
     list-style: none;
 }
 
+// <li>
 .list-inline__item {
     display: inline-block;
 

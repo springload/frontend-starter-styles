@@ -9,8 +9,24 @@
 // check out this list of issues and workarounds:
 // https://github.com/philipwalton/flexbugs
 
+// Using the flex grid
+//  <div class="grid-flex">
+//      <div class="width-1/2@medium">...</div>
+// </div>
+//
+// Learn more about the `width-` class in ../utilities/_utilities.widths.scss
+
 .grid-flex {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    @include grid-inline;
+
+    @supports (display: flex) {
+        justify-content: flex-start;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        > * {
+            width: 100%;
+        }
+    }
 }

@@ -15,14 +15,13 @@
 // Imported globally from node modules using node-sass-chokidar include path at compilation.
 @import 'normalize';
 @import 'generic/generic.box-sizing';
-@import 'generic/generic.keyframes';
 @import 'generic/generic.reset';
 @import 'generic/generic.shared';
 
 // Elements
 @import 'elements/elements.page';
 @import 'elements/elements.focus';
-@import 'elements/elements.headings';
+@import 'elements/elements.typography';
 @import 'elements/elements.links';
 @import 'elements/elements.lists';
 @import 'elements/elements.tables';
@@ -37,6 +36,7 @@
 @import 'objects/objects.grid.flex';
 @import 'objects/objects.grid.spacing';
 @import 'objects/objects.grid.alignment';
+@import 'objects/objects.grid.order';
 @import 'objects/objects.list.inline';
 @import 'objects/objects.list.unstyled';
 @import 'objects/objects.media';
@@ -50,12 +50,14 @@
 @import 'components/components.links';
 @import 'components/components.links.complex';
 @import 'components/components.form';
-@import 'components/components.form.radio-picker';
 @import 'components/components.table.base';
 @import 'components/components.table.responsive';
 @import 'components/components.table.stacked';
 @import 'components/components.table.striped';
 @import 'components/components.rich-text';
+
+// Theming
+@import 'theming/theming';
 
 // Utilities
 @import 'utilities/utilities.align';
@@ -64,5 +66,4 @@
 @import 'utilities/utilities.hide';
 @import 'utilities/utilities.widths';
 
-@import 'theming';
 @import 'print';
