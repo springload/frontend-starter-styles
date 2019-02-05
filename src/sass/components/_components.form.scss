@@ -1,54 +1,74 @@
 // =============================================================================
-// Basic common form fields
+// Common form fields, input, select, label
 // =============================================================================
 
-$form-field-height: 2.5rem;
-
-.form__field {
-    margin-bottom: $base-spacing-unit;
+// Inputs
+@mixin base-input {
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
 }
 
-.form__label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
-@mixin base-input-styles {
+@mixin input-styles {
     display: block;
     width: 100%;
-    line-height: $form-field-height;
-    height: $form-field-height;
-    appearance: none;
-    border: 1px solid $color-grey-light;
     background-color: $color-white;
-    font-size: inherit;
+    border: 1px solid $color-grey-light;
+    border-radius: 2px;
+    padding-top: $spacing-xxxs;
+    padding-bottom: $spacing-xxxs;
+    padding-left: $spacing-xxs;
+    padding-right: $spacing-xxs;
 }
 
-.form__input {
-    @include base-input-styles;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.input,
+.textarea {
+    @include base-input;
+    @include input-styles;
 }
 
-.form__select-container {
+.input:disabled,
+.textarea:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5 !important;
+}
+
+// Custom Select
+// <div class="select">
+//      <select>...</select>
+// </div>
+
+.select {
+    @include input-styles;
     position: relative;
-    width: 100%;
-}
+    overflow: hidden;
 
-.form__select-container::after {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    border-left: 0.3125rem solid transparent;
-    border-right: 0.3125rem solid transparent;
-    border-top: 0.3125rem solid currentColor;
-    content: '';
-}
+    &:after {
+        display: block;
+        position: absolute;
+        top: 44%;
+        right: 1rem;
+        content: '';
+        border-left: 0.4rem solid transparent;
+        border-right: 0.4rem solid transparent;
+        border-top: 0.4rem solid $color-grey-light;
+        z-index: 0;
+    }
 
-.form__select {
-    @include base-input-styles;
-    padding-right: 2rem;
-    padding-left: 0.5rem;
-    border-radius: 0;
+    select {
+        @include base-input;
+        position: relative;
+        background: transparent;
+        color: $color-page-text;
+        border: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: 1;
+        width: 110%;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
 }

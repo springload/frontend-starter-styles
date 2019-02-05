@@ -1,19 +1,24 @@
 // =============================================================================
 // Grid spacing
 // =============================================================================
+// Using the grid spacing, add it to the parent class.
+// It will create the gutters between grid items.
+//  <div class="grid grid--row-spacing grid--col-spacing">
+//      <div class="width-1/2@medium">...</div>
+// </div>
 
 .grid--row-spacing {
-    margin-bottom: -$base-spacing-unit;
+    margin-bottom: -$spacing;
 
     > * {
-        margin-bottom: $base-spacing-unit;
+        margin-bottom: $spacing;
     }
 }
 
 .grid--col-spacing {
-    margin-left: -$base-spacing-unit;
+    margin-left: -$spacing;
 
     > * {
-        padding-left: $base-spacing-unit;
+        padding-left: $spacing;
     }
 }

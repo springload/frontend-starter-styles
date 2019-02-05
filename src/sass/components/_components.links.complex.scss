@@ -1,6 +1,13 @@
 // =============================================================================
 // Links
 // =============================================================================
+// These are used when a 'card' or a 'tile' is inside an <a> tag, for example:
+// <a href="#" class="link-complex">
+//      <div class="card">
+//          ...
+//          <p class="link-complex__target">Read more</p>
+//      </div>
+// </a>
 
 .link-complex {
     display: block;
@@ -12,11 +19,11 @@
 }
 
 .link-complex__target {
-    color: $color-page-links;
+    color: $color-blue;
 }
 
 // Hover state for "fake links" inside complex block
 .link-complex:hover .link-complex__target {
     text-decoration: underline;
-    color: $color-page-links;
+    color: $color-blue;
 }

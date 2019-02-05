@@ -2,8 +2,26 @@
 // Text
 // =============================================================================
 
+// text aligns
+.u-text-left {
+    text-align: left !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+.u-text-center {
+    text-align: center !important;
+}
+
 .u-text-bold {
     font-weight: $font-weight-bold;
+}
+// text aligns end
+
+.u-text-italic {
+    font-style: italic;
 }
 
 .u-text-uppercase {
@@ -18,6 +36,7 @@
     opacity: 0.75 !important;
 }
 
+// text sizes
 .u-font-size-s {
     font-size: 0.9em;
 }
@@ -34,6 +53,7 @@
     font-size: 1.5em;
 }
 
+// text truncate
 .u-text-truncate {
     max-width: 100%;
     white-space: nowrap;

@@ -2,10 +2,20 @@
 // Grid alignment
 // =============================================================================
 
-.grid--middle > * {
-    vertical-align: middle;
+.grid--middle {
+    @supports (display: flex) {
+        align-items: center;
+    }
+    > * {
+        vertical-align: middle;
+    }
 }
 
-.grid--bottom > * {
-    vertical-align: bottom;
+.grid--bottom {
+    @supports (display: flex) {
+        align-items: flex-end;
+    }
+    > * {
+        vertical-align: bottom;
+    }
 }

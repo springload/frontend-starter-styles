@@ -3,9 +3,11 @@
 // =============================================================================
 
 // A mixin to spit out our width classes. Pass in the columns we want, the widths
-// to have, and an optional suffix for responsive widths. E.g. to create thirds
-// and quarters for a small breakpoint:
-// @include widths(3 4, \@small);
+// to have, and an optional suffix for responsive widths. 
+// E.g. to create thirds and quarters for a small breakpoint:
+// @include widths(3 4, \@small); 
+// see below for default width utilities, feel free to change them to 
+// suit your project.
 
 @mixin widths($widths-columns, $widths-breakpoint: null) {
     .width-full#{$widths-breakpoint} {

@@ -1,19 +1,31 @@
 // =============================================================================
 // Grid inline
 // =============================================================================
+// Using the grid
+//  <div class="grid">
+//      <div class="width-1/2@medium">...</div>
+// </div>
+//
+// Learn more about the `width-` class in ../utilities/_utilities.widths.scss
 
-.grid {
+@mixin grid-inline {
     @include clearfix;
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 0;
+    letter-spacing: -0.31em;
+
+    > * {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        vertical-align: top;
+        width: 100%;
+        letter-spacing: 0;
+        text-justify: auto;
+    }
 }
 
-.grid > * {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    font-size: medium; // Font-size medium reset the block to the context of body (ie, 16px)
-    text-justify: auto;
+.grid {
+    @include grid-inline;
 }
