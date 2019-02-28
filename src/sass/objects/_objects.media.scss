@@ -36,23 +36,12 @@ $spacing-media: 1em;
 // =============================================================================
 
 .media--middle-align {
-    display: table;
-
-    > .media__body,
-    > .media__image {
-        float: none;
-        display: table-cell;
-        vertical-align: middle;
-    }
-    
-    > .media__image {
-        padding-right: $spacing-media;
-    }    
+    display: flex;
+    align-items: center;
 }
 
 .media--middle-align.media--rev {
-    > .media__image {
-        padding-right: 0;
-        padding-left: $spacing-media;
-    }    
+    >.media__image {
+        order: 1;
+    }
 }
