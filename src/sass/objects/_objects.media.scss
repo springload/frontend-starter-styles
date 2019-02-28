@@ -41,7 +41,9 @@ $spacing-media: 1em;
 }
 
 .media--middle-align.media--rev {
-    >.media__image {
+    justify-content: space-between;
+    
+    > .media__image {
         order: 1;
     }
 }
