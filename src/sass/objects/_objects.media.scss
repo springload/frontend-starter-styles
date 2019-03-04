@@ -36,10 +36,14 @@ $spacing-media: 1em;
 // =============================================================================
 
 .media--middle-align {
-    display: table;
+    display: flex;
+    align-items: center;
+}
 
-    > .media__body {
-        display: table-cell;
-        vertical-align: middle;
+.media--middle-align.media--rev {
+    justify-content: space-between;
+    
+    > .media__image {
+        order: 1;
     }
 }
