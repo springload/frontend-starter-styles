@@ -16,13 +16,13 @@
     "start": "node-sass-chokidar 'src/sass' --watch --include-path=node_modules/normalize.css -o dist/css -c 'yarn build'"
   },
   "devDependencies": {
-    "autoprefixer": "^8.1.0",
-    "chokidar-cli": "^1.2.0",
-    "cssnano": "^3.10.0",
-    "node-sass-chokidar": "^1.1.0",
-    "postcss-cli": "^5.0.0",
-    "stylelint": "^9.1.1",
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-scss": "^2.5.0"
+    "autoprefixer": "^9.6.1",
+    "chokidar-cli": "^2.0.0",
+    "cssnano": "^4.1.10",
+    "node-sass-chokidar": "^1.3.5",
+    "postcss-cli": "^6.1.3",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-scss": "^3.9.3"
   }
 }
