@@ -6,7 +6,7 @@
   "author": "Springload",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.1"
   },
   "scripts": {
     "lint": "stylelint 'src/sass/**/*.scss' --syntax scss",
