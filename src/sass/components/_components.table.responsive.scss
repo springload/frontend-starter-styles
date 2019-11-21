@@ -29,7 +29,7 @@ $table-title-spacing: 20px;
 // Hide table header, we apply the content to pseudo elements of the corresponding cell instead
 .table--responsive .table__head {
     @include small {
-        display: 0;
+        display: none;
     }
 }
 
