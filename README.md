@@ -1,3 +1,9 @@
+# :warning: Old, do not use :warning: #
+
+These styles quite are old and don't reflect what a modern CSS setup should look like. 
+
+The [Frontend starter kit](https://github.com/springload/frontend-starter-kit) contains much better starter CSS code. While you may not need everything in the starterkit for your particular project, the CSS reflects everything in this repo... but better.
+
 # Frontend starter styles
 
 > The building blocks of CSS at Springload
